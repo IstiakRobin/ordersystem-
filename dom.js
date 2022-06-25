@@ -15,11 +15,14 @@ input.forEach(item=>{
         });
         if(total == 0)
             {   
-                h2.innerHTML = `Please select any item to process your order`
+                h2.innerHTML = `Please select any item to process your order!`
+                h2.style.color = 'red';
+                h2.style.fontSize= '30px';
             }
             else{
     
-                h2.innerHTML = `your order ${list} is Processing. Please pay this ${total} taka in cash and wait some minutes `;
+                h2.innerHTML = `your order ${list} Biriyani is Processing. Please pay this ${total} taka in cash and wait some minutes🙂 `;
+                h2.style.color = 'Green';
             }
         console.log(list);
     }
